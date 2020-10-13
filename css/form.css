@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #444444;
+    
+}
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+div.wrap{
+    width: 1200px;
+    /* border: 1px solid gray; */
+    margin: 0 auto;
+}
+
+div.col{
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+div.col > img{
+    display: inline-block;
+    margin-right: 40px;
+
+    /* border: 1px solid black; */
+}
+
+/* hover button */
+
+
+.btn {		
+	position: relative;	
+	padding: 10px 20px;
+	font-size: 16px;
+    color: #ffba39;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+	/* letter-spacing: 10px; */
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+	user-select: none;
+}
+
+.btn:before, .btn:after {
+	content: '';
+	position: absolute;	
+	transition: inherit;
+    z-index: -1;
+    box-sizing: border-box;
+}
+
+.btn:hover {
+	color: #fff;
+    transition-delay: .5s;
+    border: 1px solid transparent;
+}
+
+.btn:hover:before {
+    transition-delay: 0s;
+    box-sizing: border-box;
+
+}
+
+.btn:hover:after {
+	background: #ffba39da;
+    transition-delay: .35s;
+}
+
+/* From Top */
+
+.from-top:before, 
+.from-top:after {
+	left: 0;
+	height: 0;
+	width: 100%;
+}
+
+.from-top:before {
+	bottom: 0;	
+	border: 1px solid #444444;
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.from-top:after {
+	top: 0;
+	height: 0;
+}
+
+.from-top:hover:before,
+.from-top:hover:after {
+	height: 100%;
+}
+
+
+
+
+
+
+
+ul.header_nav_list >li:nth-child(3) > a{
+    border: 2px solid #ffba39;
+}
+/* ------------------------------ */
+/* breadcrmb */
+nav.breadcrumb{
+    border: 1px solid #EBEBEB;
+    background: #EBEBEB;
+}
+
+nav.breadcrumb > ol{
+    display: flex;
+    margin: 5px;
+}
+
+nav.breadcrumb > ol > li:first-child::after{
+    content: '>';
+    font-size: 13px;
+    display: inline-block;
+    padding: 0 5px;
+
+
+}
+nav.breadcrumb > ol > li  a{
+    display: inline-block;
+    font-size: 13px;
+}
+
+nav.breadcrumb > ol > li  a:hover{
+    font-weight: bold;
+}
+
+nav.breadcrumb > ol > :last-child{
+    font-weight: bold;
+}
+/* ------------------------------------- */
+div.top_banner{
+    width: 100%;
+    background-image: url(../img/customize/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* ------------------------------------- */
+div.main{
+    /* border: 1px solid gray; */
+    width: 100%;
+    background-image: url(../img/customize/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+div.banner{
+    /* position: relative; */
+}
+
+div.banner > div.banner_contain{
+    /* border: 1px solid blue; */
+    position: relative;
+}
+
+div.banner > div.banner_contain > div.banner_background{
+    /* border: 3px solid pink; */
+    width: 450px;
+    height: 310px;
+    position: relative;
+    background-image: url(../img/customize/door\ 550x800\ after.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+div.banner > div.banner_contain::before{
+    content: '';
+    display: inline-block;
+    width: 350px;
+    height: 300px;
+    background: #fff;
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+}
+
+div.banner > div.banner_contain > div.banner_background  img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+div.banner > div.banner_contain > div.banner_background > div.banner_chair{
+    width: 300px;
+    position: absolute;
+    left: 60px;
+    bottom: -130px;
+
+}
+
+
+div.banner > div.banner_contain > div.banner_background > div.banner_title{
+    position: absolute;
+    left: -130px;
+    top: 50px;
+}
+
+div.banner > div.banner_contain > div.banner_background > div.banner_title > h1,
+div.banner > div.banner_contain > div.banner_background > div.banner_title > p{
+    color: #707070;
+    font-size: 30px;
+    letter-spacing: 2px;
+    padding: 5px 0;
+
+}
+div.banner > div.banner_contain > div.banner_title > p{
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+div.banner > div.banner_contain > div.banner_chair > img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+
+/* 表單 */
+
+div.contain{
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: flex-end;
+    margin: 200px 150px 50px 0;
+ 
+}
+
+div.contain > div.form{
+    /* border: 1px solid blue; */
+    background: rgba(255, 255, 255, 0.685);
+    padding: 20px;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+div.space label{
+    font-size: 13px;
+
+}
+
+
+div.contain > div.form > h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+div.contain > div.form > p{
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+div.list{
+    margin:7px
+}
+
+input[type="radio"]:checked+label{
+    color: #ffba39;
+}
+
+textarea{
+    resize: none;
+}
+
+input[type="submit"]{
+
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'Noto Sans TC', sans-serif;
+    transition: .5s;
+    color: #ffba39;
+    background: #fff;
+    border: 1px solid #ffba39;
+}
+
+input[type="submit"]:hover{
+    color: #fff;
+    
+    background: #ffba39;
+}
+
+
+/* 聯絡方式 */
+
+div.contact{
+  margin-top: 150px;
+  width: 60%;
+}
+
+div.contact > h2{
+    margin: 5px;
+    border-bottom: 1px solid #ffba39;
+    padding-bottom: 10px;
+}
+div.contact li{
+    margin: 10px;
+}
+
+@media(max-width: 991px){
+
+    /* 左表單 */
+    div.contain{
+        margin-right: 100px;
+    }
+}
+
+@media(max-width: 980px){
+
+}

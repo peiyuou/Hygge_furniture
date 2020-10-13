@@ -1,0 +1,882 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #444444;
+    
+}
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+div.wrap{
+    width: 1200px;
+    /* border: 1px solid gray; */
+    margin: 0 auto;
+}
+
+div.col{
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+div.col > img{
+    display: inline-block;
+    margin-right: 40px;
+
+    /* border: 1px solid black; */
+}
+
+/* hover button */
+
+
+.btn {		
+	position: relative;	
+	padding: 10px 20px;
+	font-size: 16px;
+    color: #ffba39;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+	/* letter-spacing: 10px; */
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+	user-select: none;
+}
+
+.btn:before, .btn:after {
+	content: '';
+	position: absolute;	
+	transition: inherit;
+    z-index: -1;
+    box-sizing: border-box;
+}
+
+.btn:hover {
+	color: #fff;
+    transition-delay: .5s;
+    border: 1px solid transparent;
+}
+
+.btn:hover:before {
+    transition-delay: 0s;
+    box-sizing: border-box;
+
+}
+
+.btn:hover:after {
+	background: #ffba39da;
+    transition-delay: .35s;
+}
+
+/* From Top */
+
+.from-top:before, 
+.from-top:after {
+	left: 0;
+	height: 0;
+	width: 100%;
+}
+
+.from-top:before {
+	bottom: 0;	
+	border: 1px solid #444444;
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.from-top:after {
+	top: 0;
+	height: 0;
+}
+
+.from-top:hover:before,
+.from-top:hover:after {
+	height: 100%;
+}
+
+
+ul.header_nav_list >li:nth-child(1) > a{
+    border: 2px solid #ffba39;
+}
+
+/* ------------------------------ */
+/* breadcrmb */
+nav.breadcrumb{
+    border: 1px solid #EBEBEB;
+    background: #EBEBEB;
+    margin-bottom: 30px;
+}
+
+nav.breadcrumb > ol{
+    display: flex;
+    margin: 5px;
+}
+
+nav.breadcrumb > ol > li:first-child::after,
+nav.breadcrumb > ol > li:nth-child(2)::after,
+nav.breadcrumb > ol > li:nth-child(3)::after{
+    content: '>';
+    font-size: 13px;
+    display: inline-block;
+    padding: 0 5px;
+
+
+}
+nav.breadcrumb > ol > li  a{
+    display: inline-block;
+    font-size: 13px;
+}
+
+nav.breadcrumb > ol > li  a:hover{
+    font-weight: bold;
+}
+
+nav.breadcrumb > ol > li:nth-child(4){
+    font-weight: bold;
+}
+
+/* ------------------------------------- */
+
+/* 主商品 */
+div.main{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    /* border: 1px solid black; */
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  
+}
+
+div.artical{
+    width: calc(90% - 450px - 20px); 
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+}
+
+div.artical > div.artical_contain{
+    /* border: 1px solid green; */
+    padding: 15px;
+    width: 90%;
+    margin: 20px 0;
+}
+
+@keyframes line{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+div.artical_contain > div.product_text > h2{
+    font-size: 30px;
+    /* border-bottom: 2px solid #ffba39; */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+div.artical_contain > div.product_text > h2::after{
+    content:'';
+    display: inline-block;
+    width: 100%;
+    height: 3px;
+    background-color: #FFBA39;
+    animation-name: line;
+    animation-duration: 3s;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+
+
+div.artical_contain > div.product_text > p{
+    line-height: 1.5;
+
+}
+
+
+/* div.artical > div.artical_contain > div.designer{} */
+div.small_pic{
+    /* border: 1px solid red; */
+}   
+
+div.small_pic > ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+}
+
+div.small_pic > ul > li{
+    width: 30%;
+    /* border: 1px solid green; */
+    margin: 5px;
+    margin-bottom: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+div.small_pic > ul > li > img{
+    width: 100%;
+    vertical-align: middle;
+    opacity: .6;
+    transition: .5s linear;
+}
+
+div.small_pic > ul > li > img:hover{
+    opacity: 1;
+}
+
+
+
+
+/* 大圖 */
+
+
+div.main_pic > div.chang_pic{
+   
+   /* border: 1px solid red; */
+}
+
+div.main_pic > div.chang_pic>ul{
+    position: relative;
+}
+
+div.main_pic > div.chang_pic>ul>li:nth-child(even){
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+div.main_pic > div.chang_pic>ul>li:nth-child(3){
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+div.main_pic > div.chang_pic>ul>li:nth-child(5){
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+div.main_pic > div.chang_pic>ul>li:nth-child(7){
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+div.page > img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+/* 點擊小圖讓圖片浮出來 */
+div.main_pic > div.chang_pic>ul>li.pic_show{
+    z-index: 5;
+}
+
+
+div.main_pic > div.page1 >img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+
+
+/* 大圖加號 */
+
+
+div.page{
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+div.page1{
+    position: relative;
+    /* border-radius: 5px; */
+    
+}
+
+div.page1 > div.pop_block > span.plus{
+    /* border: 1px solid blue; */
+    position: absolute;
+    left: 0;
+    bottom: 0;  
+}
+
+
+
+
+
+
+div.page1 > div.pop_block > span.plus{
+    display: inline-block;
+    cursor: pointer;
+    
+    /* border: 1px solid green; */
+   
+}
+
+
+
+div.page1 > div.pop_block > span.plus > .fas{
+    color:#fff;
+    font-size: 30px;
+    opacity: .5;
+    transition: .5s ease-in-out;
+    
+}
+
+
+
+div.page1 > div.pop_block > span.bed_cover{
+    left: 60%;
+    bottom: 30%;
+    /* border: 1px solid red; */
+  
+}
+
+div.page1 > div.pop_block > span.mirrow_desk{
+    left: 47%;
+    bottom:45%;
+
+}
+
+ div.page1 > div.pop_block > span.black_desk{
+    left: 7%;
+    bottom:50%;
+}
+
+div.page1 > div.pop_block >  span.green_chair{
+    left: 27%;
+    bottom:30%;
+}
+
+
+
+
+/* hover出現的產品小圖 */
+
+div.point_image{
+    /* border: 1px solid gray; */
+    width: 100px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 5px 10px 5px #2e2e2e63;
+    position: absolute;
+    left: 20px;
+    bottom: -80px;
+    display: none;
+}
+
+div.point_image > img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+div.point_image_text{
+    background: #fff;
+    /* padding-left: 10px; */
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.point_image_text > span{
+    font-size: 15px;
+    line-height: 1.5;
+    display: block;
+}
+
+div.point_image_text > a{
+    display: inline-block;
+    font-size: 12px;
+    background: #ffba39;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+    transition: .5s;
+    
+}
+
+
+
+span.plus > div.show_up {
+    display: block;
+}
+
+
+/* 桌電 */
+
+
+@media(max-width: 1350px){
+    div.main{
+
+    }
+}
+/* -------------------------- */
+
+@media(max-width: 962px){
+    div.main{
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.artical{
+        width: 80%;
+        text-align: center;
+    }
+
+    div.small_pic{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: translateY(100%);
+    }
+
+    div.small_pic > ul{
+        flex-wrap: nowrap;
+    }
+
+
+
+    
+
+}
+
+@media(max-width: 500px){
+    div.artical > div.artical_contain{
+        margin: 0;
+        width: 100%;
+    }
+}
+
+
+
+/* ------------------------------- */
+
+/* 產品 */
+
+div.take_style{
+    /* border: 1px solid blue; */
+    margin-top: 100px;
+}
+
+
+div.take_style > h3{
+    width: 150px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    position: relative;
+}
+
+div.take_style > h3::after{
+    content:'';
+    display: inline-block;
+    width: 100%;
+    height: 3px;
+    background-color: #FFBA39;
+    animation-name: line;
+    animation-duration: 3s;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+
+div.take_style > span{
+    font-size: 13px;
+    margin-left: 25px;
+}
+
+
+ div.product{
+    overflow-y: hidden;
+    box-sizing: content-box;
+    padding-bottom: 30px;
+    height: 270px;
+}
+
+div.product > ul{
+    width: 260%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+div.product > ul > li{
+    width: 5%;
+}
+
+/* 把slider bar藏起來 */
+div.hide_scroll{
+    /* border: 1px solid red; */
+    overflow: hidden;
+    height: 270px;
+}
+
+
+/* slider_control */
+div.product_slider{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid blue; */
+    margin: 20px;
+}
+
+div.take_style button{
+    outline: none;
+    border: none;
+    background: none;
+    /* border: 1px solid red; */
+    cursor: pointer;
+    padding: 20px;
+}
+
+div.take_style button > .fas{
+    font-size: 30px;
+}
+
+div.take_style button > .fas:hover{
+    color: #ffba39;
+}
+
+
+/* ------------------- */
+/* 原產品css */
+div.product_item{
+    /* border: 1px solid green; */
+    display: inline-block;
+    /* width: 14%; */
+    width: 100%;
+}
+
+div.product_item > div.item_pic{
+    overflow: hidden;
+    /* border: 1px solid blue; */
+}
+
+div.product_item > div.item_pic img:hover{
+    transform: scale(1.1);
+}
+
+
+
+div.product_item > div.item_pic{
+    border-radius: 5px;
+    overflow: hidden;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+
+div.product_item > div.item_pic > a{
+    /* border: 1px solid red; */
+
+}
+div.product_item > div.item_pic > a > img{
+    width: 100%;
+    transition: .6s;
+}
+
+div.product_item > div.item_content{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 0 ;
+
+}
+
+div.item_content > a > h4{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+div.item_content > span.discribe{
+    font-size: 13px;
+    color: #707070;
+    margin-bottom: 10px;
+}
+div.item_content > span.price{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* 購物車 */
+div.product_buttons{
+    border: 1px solid #ffba39;
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    bottom: 2px;
+    transform: translateY(108%);
+    transition: .8s;
+}
+
+div.product_buttons > ul{
+    display: flex;
+    /* border: 1px solid red; */
+}
+
+div.product_buttons > ul > li{
+    border-right: 1px solid #ffba39;
+    flex-grow: 1;
+}
+
+div.product_buttons > ul > li:last-child{
+    border-right: 0;
+}
+
+div.product_buttons  button.quck_view{
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+
+div.product_buttons a{
+    padding: 5px 10px;
+    display: inline-block;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.63);
+    text-align: center;
+}
+
+div.product_buttons  button.quck_view:hover,
+div.product_buttons a:hover{
+    background-color:  #ffba39;
+}
+
+
+div.product_item > div.item_pic:hover
+div.product_buttons{
+    transform: translateY(-0%);
+}
+
+@media(min-width: 1350px){
+    div.take_style{
+        max-width: 1200px;
+        margin: 100px auto;
+    }
+
+}
+
+@media(max-width: 1170px){
+    div.product > ul > li{
+        width: 6%;
+    }
+
+}
+
+@media(max-width: 991px){
+    div.product_buttons{
+        transform: translateY(0);
+        position: inherit;
+    }
+    div.hide_scroll{
+        height: 300px;
+    }
+
+    div.product{
+        height: 300px;
+    }
+    
+}
+
+@media(max-width: 962px){
+    div.take_style{
+        margin-top: 180px;
+    }
+
+    div.product > ul{
+        width: 319%;
+    }
+
+    div.product > ul > li{
+        width: 7%;
+        margin: 0 20px;
+    }
+    
+}
+
+@media(max-width: 842px){
+    div.product > ul{
+        width: 380%;
+    }
+
+}
+
+@media(max-width: 767px){
+    div.product > ul{
+        width: 435%;
+    }
+}
+
+@media(max-width: 715px){
+    div.product > ul{
+        width: 500%;
+    }
+}
+
+@media(max-width: 667px){
+    div.product > ul{
+        width: 550%;
+    }
+}
+
+
+@media(max-width: 575px){
+
+    div.take_style button{
+        padding: 10px;
+    }
+    div.take_style{
+        margin-top: 100px;
+    }
+
+    div.product > ul{
+        width: 640%;
+    }
+}
+
+@media(max-width: 500px){
+    div.product > ul{
+        width: 760%;
+    }
+}
+
+
+
+
+
+
+
+
+/* ------------------------------ */
+
+/* 頁尾 */
+footer.main_footer{
+    margin-top: 150px;
+    background: #ededed;
+    background-image: url(../img/index/footer.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+
+footer.main_footer > div.footer_content{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid green; */
+    padding: 10px 0;
+
+}
+
+div.footer_content > div.footer_item{
+    /* border: 1px solid pink; */
+    transform: translateY(10%);
+}
+div.footer_content > div.footer_logo > a{
+    /* border: 1px solid red; */
+    display: inline-block;
+    margin-bottom: 20px;
+    
+}
+
+
+
+div.footer_content > div.footer_logo > p{
+    color: #707070;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+div.footer_content > div.footer_logo img{
+    width: 120px;
+}
+
+div.footer_content > div.footer_logo > div.social_icon{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+div.footer_content > div.footer_logo  div.social_icon .fas,
+div.footer_content > div.footer_logo  div.social_icon .fab{
+    font-size: 25px;
+    color: #707070;
+    transition: .5s;
+}
+
+
+div.footer_content > div.footer_logo  div.social_icon .fas:hover{
+    color:#ffba39;
+}
+
+div.footer_content > div.footer_logo  div.social_icon .fab:hover{
+    color:#ffba39;
+}
+
+div.footer_content > div.footer_item h4{
+    border-bottom: 2px solid #ffba39;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    color: #ffba39;
+    width: 100px;
+
+} 
+
+div.footer_content > div.footer_item a{
+    display: inline-block;
+    padding-bottom: 10px;
+    color: #707070;
+}
+
+div.footer_content > div.footer_item a:hover{
+    color: #ffba39;
+    transition: .8s;
+}
+
+div.footer_item  .fas{
+    color: #707070;
+    padding-right: 10px;
+}
+
+
+
+div.footer_copyright{
+    text-align: right;
+    font-size: 12px;
+     /* border: 1px solid red;  */
+     padding: 10px 20px 10px 0;
+}

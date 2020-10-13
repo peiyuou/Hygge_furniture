@@ -1,0 +1,712 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #444444;
+    
+}
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+div.wrap{
+    width: 1200px;
+    /* border: 1px solid gray; */
+    margin: 0 auto;
+}
+
+div.col{
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+div.col > img{
+    display: inline-block;
+    margin-right: 40px;
+
+    /* border: 1px solid black; */
+}
+
+/* hover button */
+
+
+.btn {		
+	position: relative;	
+	padding: 10px 20px;
+	font-size: 16px;
+    color: #ffba39;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+	/* letter-spacing: 10px; */
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+	user-select: none;
+}
+
+.btn:before, .btn:after {
+	content: '';
+	position: absolute;	
+	transition: inherit;
+    z-index: -1;
+    box-sizing: border-box;
+}
+
+.btn:hover {
+	color: #fff;
+    transition-delay: .2s;
+    border: 1px solid transparent;
+}
+
+.btn:hover:before {
+    transition-delay: 0s;
+    box-sizing: border-box;
+
+}
+
+.btn:hover:after {
+	background: #ffba39da;
+    transition-delay: .15s;
+}
+
+/* From Top */
+
+.from-top:before, 
+.from-top:after {
+	left: 0;
+	height: 0;
+	width: 100%;
+}
+
+.from-top:before {
+	bottom: 0;	
+	border: 1px solid #444444;
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.from-top:after {
+	top: 0;
+	height: 0;
+}
+
+.from-top:hover:before,
+.from-top:hover:after {
+	height: 100%;
+}
+
+
+
+ul.header_nav_list >li:nth-child(2) > a{
+    border: 2px solid #ffba39;
+}
+
+/* ------------------------------ */
+/* breadcrumb */
+nav.breadcrumb{
+    /* border: 1px solid #EBEBEB; */
+    background: #EBEBEB;
+    padding: 5px 30px;
+}
+
+nav.breadcrumb > ol{
+    display: flex;
+}
+
+nav.breadcrumb > ol > li:first-child::after,
+nav.breadcrumb > ol > li:nth-child(2)::after{
+    content: '>';
+    font-size: 13px;
+    display: inline-block;
+    padding: 0 5px;
+}
+
+nav.breadcrumb > ol > li  a{
+    display: inline-block;
+    font-size: 13px;
+}
+
+nav.breadcrumb > ol > li  a:hover{
+    font-weight: bold;
+}
+
+nav.breadcrumb > ol > li:nth-child(3){
+    font-weight: bold;
+}
+
+/* ------------------------------------- */
+
+
+/* banner */
+div.banner{
+    position: relative;
+   
+}
+
+div.banner > div.banner_pic{
+    opacity: .6;
+    height: 400px;
+    background-image: url(../img/beds/banner\ 1200x500.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-attachment: fixed; */
+}
+
+div.banner > div.banner_text {
+    position: absolute;
+    z-index: 1;
+    /* border: 1px solid red; */
+    width: 200px;
+    left: 250px;
+    top: 120px;
+
+}
+
+div.banner > div.banner_text > h2{
+    font-size: 60px;
+    border-bottom: 2px solid #444444;
+    padding-bottom: 10px;
+    margin-bottom: 20px;   
+    }
+
+
+/* @media(min-width:1350px){
+    div.banner{
+        background-attachment: inherit;
+    }
+} */
+
+@media(max-width:1089px){
+    div.banner > div.banner_text{
+        left:200px;
+    }
+}
+
+@media(max-width:929px){
+    div.banner > div.banner_text{
+        left:150px;
+        width: 150px;
+    }
+}
+
+
+
+@media(max-width:767px){
+    div.banner > div.banner_text{
+        left:100px;
+        width: 100px;
+    }
+}
+
+
+
+/* ------------------------------ */
+/* 下方主要內容 */
+
+div.container{
+    /* border: 1px solid gray; */
+    margin-top: 100px;
+    display: flex; 
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+ 
+    
+}
+
+/* 左側導覽列 */
+
+div.side_nav{
+    width: 12%;
+    /* border: 1px solid green; */
+    padding: 10px 10px;
+    margin: 0 30px;
+    
+    
+}
+
+div.side_nav > h3{
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+
+div.side_nav_content > div.facet_open{
+    /* border: 1px solid green; */
+    border-bottom: 2px solid #444444;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+div.side_nav_content > div.facet_open > h4{
+    margin-bottom: 10px;
+}
+
+div.side_nav_content > div.facet_open > h4.h4_click{
+    background: #ffba39;
+}
+
+
+
+div.facet_attributes > ul > li{
+    /* border: 1px solid pink; */
+    padding: 5px 0;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+
+div.facet_attributes > ul > li > input[type="checkbox"]{
+    display: none;
+    cursor: pointer;
+    
+}
+
+
+div.facet_attributes > ul > li > input[type="checkbox"] + label:hover{
+    color: #6A97BD;
+    font-weight: normal;
+}
+
+
+div.facet_attributes > ul > li > input[type="checkbox"] + label::before
+{
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    /* border: 1px solid blue; */
+    
+    background-image: url("https://alldata.sgp1.digitaloceanspaces.com/images/unchecked-checkbox-50.png");
+    background-size: contain;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+
+div.facet_attributes > ul > li > input[type="checkbox"]:checked +
+label::before{
+    background-image: url("https://alldata.sgp1.digitaloceanspaces.com/images/checked-checkbox-50.png");
+}
+
+@media (max-width:1130px){
+
+    div.container{
+        flex-direction: column;
+    }
+
+    /* 左側選單 */
+
+    div.side_nav{
+        width: 90%;
+        margin: 0 auto;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    div.side_nav > div.side_nav_content{
+        display: flex;
+    }
+
+    div.side_nav_content > div.facet_open{
+        border-bottom: none;
+        /* border: 1px solid #ffba39; */
+        padding: 0;
+        margin: 50px 0;
+    }
+
+    div.side_nav > h3{
+        border: 1px solid #ffba39;
+        padding: 10px 50px;
+        display: none;
+    }
+
+    div.side_nav_content > div.facet_open > h4 {
+        /* border-right: 1px solid #444444; */
+        color: #fff;
+        background: #6A97BD;
+        padding: 15px 100px;
+        margin-bottom: 0;
+        border-radius: 10px;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+
+    div.side_nav_content > div.facet_open > h4::after{
+        content: '';
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-top: 6px solid #fff;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        margin-left: 5px;
+        transform: translateY(-50%);
+    }
+
+    div.facet_attributes > ul{
+        background: #ededed;
+        position: absolute;
+        z-index: 5;
+        width: 245px;
+        margin: 0 5px;
+        border-radius: 10px;
+        display: none;
+    }
+
+    div.facet_attributes > ul > li{
+        margin: 5px 10px;
+    }
+}
+
+
+@media (max-width:889px){
+    div.side_nav_content > div.facet_open > h4 {   
+        padding: 15px 70px; 
+    }
+
+    div.facet_attributes > ul{
+        width: 185px;   
+    }
+}
+
+@media (max-width:689px){
+    div.side_nav_content > div.facet_open > h4 {   
+        padding: 15px 50px; 
+        margin: 0 10px;
+    }
+
+    div.facet_attributes > ul{
+        width: 145px;   
+        margin: 0 10px;
+    }
+}
+
+@media (max-width:589px){
+
+    div.container{
+        margin-top: 60px;
+    } 
+    div.side_nav_content > div.facet_open > h4 {   
+        padding: 10px 35px; 
+        /* margin: 0 10px */
+    }
+
+    div.facet_attributes > ul{
+        width: 115px;   
+        /* margin: 0 10px; */
+    }
+}
+
+@media (max-width:420px){
+
+
+    div.side_nav_content > div.facet_open > h4 {   
+        padding: 10px 22px; 
+        margin: 0 5px;
+    }
+
+    div.facet_attributes > ul{
+        width: 89px;   
+        margin: 0 5px;
+    }
+}
+
+
+
+
+
+
+/* 右側商品內容 */
+
+div.main_content{
+    /* border: 1px solid green; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+/* 排列選項 */
+
+div.category_control{
+    margin-right: 38px;
+}
+
+
+div.sort_nav select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    background: none;
+
+    border: 1px solid gray;
+    width: 150px;
+    padding: 5px 10px;
+    background-image: url(../img/beds/icons8-below-24.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: right 8px center; 
+    cursor: pointer;
+    font-size: 15px;
+    color: #707070;
+    border-radius: 5px;
+    font-family: 'Noto Sans TC', sans-serif;
+    
+}
+
+
+/* 產品list*/
+
+
+div.sub_container{
+    margin-top: 20px;
+    /* border: 1px solid blue; */
+
+}
+
+div.sub_container > ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+div.sub_container > ul > li{
+    width: 26%;
+    margin: 0 auto;
+    
+}
+
+
+/* hover換圖 */
+div.product_item > div.product_pic{
+    /* width: 100%; */
+    /* border: 1px solid green; */
+    position: relative;
+}
+
+div.product_item > div.product_pic > a{
+    width: 100%;
+    display: inline-block;
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+
+
+div.product_item > div.product_pic > a > img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+div.product_item > div.product_pic > a > img:last-child{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: .8s ease-in-out;
+}
+
+div.product_item > div.product_pic > a > img:last-child:hover{
+    opacity: 0;
+    /* transition: .8s ease-in-out; */
+}
+
+/* 產品資訊 */
+
+div.product_item > div.product_text{
+    /* border: 1px solid orange; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.product_item > div.product_text > h3{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+div.product_item > div.product_text > span{
+    font-size: 13px;
+    color: #707070;
+    padding-bottom: 10px;
+}
+
+div.product_item > div.product_text > p{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+div.btn{
+    border: 1px solid pink;
+}
+
+/* 購物車 */
+div.product_buttons{
+    border: 1px solid #ededed;
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    left:0;
+    bottom: 11px;
+    transform: translateY(108%);
+    transition: .8s;
+    opacity: 0;
+}
+
+div.product_buttons > ul{
+    display: flex;
+    /* border: 1px solid red; */
+}
+
+div.product_buttons > ul > li{
+    border-right: 1px solid #ededed;
+    flex-grow: 1;
+}
+
+div.product_buttons > ul > li:last-child{
+    border-right: 0;
+}
+
+div.product_buttons  button.quck_view{
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+
+div.product_buttons a{
+    padding: 10px 10px;
+    display: inline-block;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.63);
+    text-align: center;
+    transition: .3s;
+}
+
+div.product_buttons  button.quck_view:hover,
+div.product_buttons a:hover{
+    background-color:  #ffba39;
+}
+
+div.product_pic:hover
+div.product_buttons{
+    transform: translateY(-0%);
+    opacity: 1;
+}
+
+
+
+@media(max-width:910px){
+       /* 商品購物車按鈕 */
+   div.product_buttons{
+    opacity: 1;
+    position: inherit;
+    left: 0;
+    top: -7px;
+    transform: translateY(0);
+    width: 100%;
+} 
+}
+
+
+@media(max-width:765px){
+    /* 商品 */
+    div.sub_container > ul > li{
+        width: 40%;
+    }
+    div.product_buttons{
+        top: -12px;
+    }
+    div.product_buttons a{
+        padding:10px 10px;
+    } 
+}
+
+
+@media(max-width:574px){
+    /* 商品 */
+    div.sub_container > ul > li{
+        width: 70%;
+    }
+
+    div.product_buttons{
+        top: -13px;
+    }
+}
+
+@media(max-width:400px){
+    /* 商品 */
+ 
+    div.product_buttons{
+        top: -10px;
+    }
+}
+
+
+
+
+
+
+
+
+/* ------------------------------ */
+/* pagination 分頁 */
+
+
+div.pagination{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+div.pagination > ul{
+    display: flex;
+}
+
+
+div.pagination > ul > li > a{
+    display: inline-block;
+    margin-left: 3px;
+    width: 30px;
+    height: 30px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 12px;
+    transition: .5s;
+}
+
+div.pagination > ul > li:first-child > a:hover{
+    background: #6A97BD;
+
+}
+
+div.pagination > ul > li:last-child > a:hover{
+    background: #6A97BD;
+
+}
+
+
+div.pagination > ul > li > a:hover{
+    background: #ffba39;
+}
+
+
+
+
+

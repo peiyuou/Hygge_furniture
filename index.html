@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hygge House</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/loading.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/layout_header.css">
+    <link rel="stylesheet" href="css/layout_footer.css">
+
+
+</head>
+
+<body>
+    <div class="loading_wrap">
+        <div class="loading">
+            <div class="bounceball"></div>
+            <div class="text">welcome to hygge</div>
+        </div>
+    </div>
+
+
+
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="img/index/logo.png" alt="hygge_logo"></a>
+        </div>
+
+
+        <nav class="header_nav" id="header_nav">
+            <div class="nav_content_1">
+                <ul class="header_nav_list">
+                    <li>
+                        <a class="btn from-top" href="#">空間<i class="fas fa-chevron-down"></i></a>
+                        <div class="style_package">
+                            <ul class="dropdown_list">
+                                <li><a href="bedroom_style.html">臥室</a></li>
+                                <li><a href="bedroom_style.html">客廳</a></li>
+                                <li><a href="bedroom_style.html">浴室</a></li>
+                                <li><a href="bedroom_style.html">廚房</a></li>
+                                <li><a href="bedroom_style.html">書房</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="btn from-top" href="#">產品<i class="fas fa-chevron-down"></i></a>
+                        <div class="product_package">
+                            <ul class="dropdown_list">
+                                <li><a href="beds.html">床組</a></li>
+                                <li><a href="beds.html">桌子</a></li>
+                                <li><a href="beds.html">椅子</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="btn from-top" href="customize.html">空間規劃</a></li>
+                    <li><a class="btn from-top" href="about_us.html">關於我們</a></li>
+                </ul>
+            </div>
+            <!-- <div class="nav_content_2">
+                <div class="header_icon">
+                    <form action="#" class="header_search">
+                        <div class="search">
+                            <input type="search" name="search" placeholder=" Search">
+                            <button><i class="fa fa-search"></i></button>
+                        </div>
+                    </form>
+                    <a href="#"><i class="fas fa-user"></i></a>
+                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+            </div> -->
+        </nav>
+        <div class="nav_content_2">
+            <div class="header_icon">
+                <form action="#" class="header_search">
+                    <div class="search">
+                        <input type="search" name="search" placeholder=" Search">
+                        <button><i class="fa fa-search"></i></button>
+                    </div>
+                </form>
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+
+
+        <div class="hamburger">
+            <button class=" hamburger hamburger--spring btn_switch" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+    </header>
+
+
+    <div class="banner">
+        <div class="banner_container">
+
+            <div class="banner_slider">
+                <ul class="banners">
+                    <li id="bannerItem">
+                        <a href="#">
+                            <img src="img/index/banner/banner1.jpg" alt=""></a>
+                        <div class="content_txt">
+                            <h1>Create your <span>Hygge life.</span></h1>
+                        </div>
+                    </li>
+                </ul>
+
+                <button class="slider_control">
+                    <ul id="slider_btn">
+                    </ul>
+                </button>
+            </div>
+
+
+
+
+            <!-- 空間 -->
+            <div class="owl_wrapper">
+                <div class="owl_item">
+                    <div class="item">
+                        <ul>
+                            <li>
+                                <div class="cover_img">
+                                    <a href="bedroom_style.html"><img src="img/index/space/bedroom.jpg" alt=""></a>
+                                </div>
+                                <div class="item_product">
+                                    <div class="item_icon">
+                                        <i class="fas fa-bed"></i>
+                                    </div>
+                                    <div class="item_title">
+                                        <a href="bedroom_style.html">臥室</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="owl_item">
+                    <div class="item">
+                        <ul>
+                            <li>
+                                <div class="cover_img">
+                                    <a href="bedroom_style.html">
+                                        <img src="img/index/space/livingroom.jpg" alt="">
+                                    </a>
+
+                                </div>
+                                <div class="item_product">
+                                    <div class="item_icon">
+                                        <i class="fas fa-couch"></i>
+                                    </div>
+                                    <div class="item_title">
+                                        <a href="bedroom_style.html">客廳</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="owl_item">
+                    <div class="item">
+                        <ul>
+                            <li>
+                                <div class="cover_img">
+                                    <a href="bedroom_style.html">
+                                        <img src="img/index/space/bathroom.jpg" alt="">
+                                    </a>
+
+                                </div>
+                                <div class="item_product">
+                                    <div class="item_icon">
+                                        <i class="fas fa-bath"></i>
+                                    </div>
+                                    <div class="item_title">
+                                        <a href="bedroom_style.html">浴室</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="owl_item">
+                    <div class="item">
+                        <ul>
+                            <li>
+                                <div class="cover_img">
+                                    <a href="bedroom_style.html">
+                                        <img src="img/index/space/diningroom.jpg" alt="">
+                                    </a>
+
+                                </div>
+                                <div class="item_product">
+                                    <div class="item_icon">
+                                        <i class="fas fa-utensils"></i>
+                                    </div>
+                                    <div class="item_title">
+                                        <a href="bedroom_style.html">餐廳</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="owl_item">
+                    <div class="item">
+                        <ul>
+                            <li>
+                                <div class="cover_img">
+                                    <a href="bedroom_style.html">
+                                        <img src="img/index/space/kitchen.jpg" alt="">
+                                    </a>
+
+                                </div>
+                                <div class=" item_product">
+                                    <div class="item_icon">
+                                        <i class="fas fa-bread-slice"></i>
+                                    </div>
+                                    <div class="item_title">
+                                        <a href="#">廚房</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="owl_item">
+                    <div class="item">
+                        <ul>
+                            <li>
+                                <div class="cover_img">
+                                    <a href="bedroom_style.html">
+                                        <img src="img/index/space/pet.jpg" alt="">
+                                    </a>
+
+                                </div>
+                                <div class="item_product">
+                                    <div class="item_icon">
+                                        <i class="fas fa-paw"></i>
+                                    </div>
+                                    <div class="item_title">
+                                        <a href="#">其他</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="main">
+        <div class="col">
+            <!-- <img src="img/index/hr/產品.png" alt=""> -->
+            <h2>產品</h2>
+        </div>
+
+
+
+        <div class="container">
+            <div class="container_nav">
+                <ul>
+                    <li id="new"><a class="btn from-top" href="javascript:void(0);">新品上市<span>new</span></a></li>
+                    <li id="hot"><a class="btn from-top" href="javascript:void(0);">熱門<span>top 10</span></a></li>
+                </ul>
+            </div>
+
+            <div class="container_col">
+                <ul>
+                    <li id="col_hot">
+                        <div class="product hot_product">
+                            <div class="product_item hot_item">
+                                <div class="item_pic">
+                                    <a href="product.html">
+                                        <img src="img/index/黃色傢俱/傢俱單品6.png" alt="">
+                                    </a>
+                                    <div class="product_buttons">
+                                        <ul>
+                                            <li> <button class="quck_view"><i class="far fa-eye"></i></button></li>
+                                            <li><a href="#" class="cart"><i class="fas fa-cart-plus"></i></a></li>
+                                            <li><a href="#" class="wish_list"><i class="far fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="item_content">
+                                    <a href="#">
+                                        <h4>Plastic Stool</h4>
+                                    </a>
+                                    <span class="discribe">懶人軟墊,芥末黃</span>
+                                    <span class="price">$699</span>
+                                </div>
+                            </div>
+                            <div class="product_item hot_item">
+                                <div class="item_pic">
+                                    <a href="product.html"><img src="img/index/黃色傢俱/傢俱單品7.png" alt=""></a>
+                                    <div class="product_buttons">
+                                        <ul>
+                                            <li> <button class="quck_view"><i class="far fa-eye"></i></button></li>
+                                            <li><a href="#" class="cart"><i class="fas fa-cart-plus"></i></a></li>
+                                            <li><a href="#" class="wish_list"><i class="far fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="item_content">
+                                    <a href="product.html">
+                                        <h4>Plastic Stool</h4>
+                                    </a>
+                                    <span class="discribe">懶人軟墊,芥末黃</span>
+                                    <span class="price">$699</span>
+                                </div>
+                            </div>
+                            <div class="product_item hot_item">
+                                <div class="item_pic">
+                                    <a href="product.html"><img src="img/index/黃色傢俱/傢俱單品8.png" alt=""></a>
+                                    <div class="product_buttons">
+                                        <ul>
+                                            <li> <button class="quck_view"><i class="far fa-eye"></i></button></li>
+                                            <li><a href="#" class="cart"><i class="fas fa-cart-plus"></i></a></li>
+                                            <li><a href="#" class="wish_list"><i class="far fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="item_content">
+                                    <a href="product.html">
+                                        <h4>Plastic Stool</h4>
+                                    </a>
+                                    <span class="discribe">懶人軟墊,芥末黃</span>
+                                    <span class="price">$699</span>
+                                </div>
+                            </div>
+                            <div class="product_item hot_item">
+                                <div class="item_pic">
+                                    <a href="product.html"><img src="img/index/黃色傢俱/傢俱單品9.png" alt=""></a>
+                                    <div class="product_buttons">
+                                        <ul>
+                                            <li> <button class="quck_view"><i class="far fa-eye"></i></button></li>
+                                            <li><a href="#" class="cart"><i class="fas fa-cart-plus"></i></a></li>
+                                            <li><a href="#" class="wish_list"><i class="far fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="item_content">
+                                    <a href="product.html">
+                                        <h4>Plastic Stool</h4>
+                                    </a>
+                                    <span class="discribe">懶人軟墊,芥末黃</span>
+                                    <span class="price">$699</span>
+                                </div>
+                            </div>
+                            <div class="product_item hot_item">
+                                <div class="item_pic">
+                                    <a href="product.html"><img src="img/index/黃色傢俱/傢俱單品10.png" alt=""></a>
+                                    <div class="product_buttons">
+                                        <ul>
+                                            <li> <button class="quck_view"><i class="far fa-eye"></i></button></li>
+                                            <li><a href="#" class="cart"><i class="fas fa-cart-plus"></i></a></li>
+                                            <li><a href="#" class="wish_list"><i class="far fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="item_content">
+                                    <a href="product.html">
+                                        <h4>Plastic Stool</h4>
+                                    </a>
+                                    <span class="discribe">懶人軟墊,芥末黃</span>
+                                    <span class="price">$699</span>
+                                </div>
+                            </div>
+                            <div class="product_item hot_item">
+                                <div class="item_pic">
+                                    <a href="product.html"><img src="img/index/黃色傢俱/傢俱單品11.png" alt=""></a>
+                                    <div class="product_buttons">
+                                        <ul>
+                                            <li> <button class="quck_view"><i class="far fa-eye"></i></button></li>
+                                            <li><a href="#" class="cart"><i class="fas fa-cart-plus"></i></a></li>
+                                            <li><a href="#" class="wish_list"><i class="far fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="item_content">
+                                    <a href="product.html">
+                                        <h4>Plastic Stool</h4>
+                                    </a>
+                                    <span class="discribe">懶人軟墊,芥末黃</span>
+                                    <span class="price">$699</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="col_new">
+                        <div class="product new_product">
+                            <div class="product_item new_item">
+                                <div class="item_pic">
+                                    <a href="product.html">
+                                        <img src="img/index/黃色傢俱/傢俱單品1.png" alt="">
+                                    </a>
+                                    <div class="product_buttons">
+                                        <ul>
+                                            <li> <button class="quck_view"><i class="far fa-eye"></i></button></li>
+                                            <li><a href="#" class="cart"><i class="fas fa-cart-plus"></i></a></li>
+                                            <li><a href="#" class="wish_list"><i class="far fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="item_content">
+                                    <a href="#">
+                                        <h4>Plastic Stool</h4>
+                                    </a>
+                                    <span class="discribe">懶人軟墊,芥末黃</span>
+                                    <span class="price">$699</span>
+                                </div>
+                            </div>
+                            <div class="product_item new_item">
+                                <div class="item_pic">
+                                    <a href="product.html"><img src="img/index/黃色傢俱/傢俱單品2.png" alt=""></a>
+                                    <div class="product_buttons">
+                                        <ul>
+                                            <li> <button class="quck_view"><i class="far fa-eye"></i></button></li>
+                                            <li><a href="#" class="cart"><i class="fas fa-cart-plus"></i></a></li>
+                                            <li><a href="#" class="wish_list"><i class="far fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="item_content">
+                                    <a href="product.html">
+                                        <h4>Plastic Stool</h4>
+                                    </a>
+                                    <span class="discribe">懶人軟墊,芥末黃</span>
+                                    <span class="price">$699</span>
+                                </div>
+                            </div>
+                            <div class="product_item new_item">
+                                <div class="item_pic">
+                                    <a href="product.html"><img src="img/index/黃色傢俱/傢俱單品3.png" alt=""></a>
+                                    <div class="product_buttons">
+                                        <ul>
+                                            <li> <button class="quck_view"><i class="far fa-eye"></i></button></li>
+                                            <li><a href="#" class="cart"><i class="fas fa-cart-plus"></i></a></li>
+                                            <li><a href="#" class="wish_list"><i class="far fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="item_content">
+                                    <a href="product.html">
+                                        <h4>Plastic Stool</h4>
+                                    </a>
+                                    <span class="discribe">懶人軟墊,芥末黃</span>
+                                    <span class="price">$699</span>
+                                </div>
+                            </div>
+                            <div class="product_item new_item">
+                                <div class="item_pic">
+                                    <a href="product.html"><img src="img/index/黃色傢俱/傢俱單品4.png" alt=""></a>
+                                    <div class="product_buttons">
+                                        <ul>
+                                            <li> <button class="quck_view"><i class="far fa-eye"></i></button></li>
+                                            <li><a href="#" class="cart"><i class="fas fa-cart-plus"></i></a></li>
+                                            <li><a href="#" class="wish_list"><i class="far fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="item_content">
+                                    <a href="product.html">
+                                        <h4>Plastic Stool</h4>
+                                    </a>
+                                    <span class="discribe">懶人軟墊,芥末黃</span>
+                                    <span class="price">$699</span>
+                                </div>
+                            </div>
+                            <div class="product_item new_item">
+                                <div class="item_pic">
+                                    <a href="product.html"><img src="img/index/黃色傢俱/傢俱單品5.png" alt=""></a>
+                                    <div class="product_buttons">
+                                        <ul>
+                                            <li> <button class="quck_view"><i class="far fa-eye"></i></button></li>
+                                            <li><a href="#" class="cart"><i class="fas fa-cart-plus"></i></a></li>
+                                            <li><a href="#" class="wish_list"><i class="far fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="item_content">
+                                    <a href="product.html">
+                                        <h4>Plastic Stool</h4>
+                                    </a>
+                                    <span class="discribe">懶人軟墊,芥末黃</span>
+                                    <span class="price">$699</span>
+                                </div>
+                            </div>
+                            <div class="product_item new_item">
+                                <div class="item_pic">
+                                    <a href="product.html"><img src="img/index/黃色傢俱/傢俱單品12.png" alt=""></a>
+                                    <div class="product_buttons">
+                                        <ul>
+                                            <li> <button class="quck_view"><i class="far fa-eye"></i></button></li>
+                                            <li><a href="#" class="cart"><i class="fas fa-cart-plus"></i></a></li>
+                                            <li><a href="#" class="wish_list"><i class="far fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="item_content">
+                                    <a href="product.html">
+                                        <h4>Plastic Stool</h4>
+                                    </a>
+                                    <span class="discribe">懶人軟墊,芥末黃</span>
+                                    <span class="price">$699</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="select_style content2">
+            <div class="select_sytle_text">
+                <h2>從風格挑選傢俱</h2>
+                <p>來自不同設計師的空間搭配，<br>
+                    讓你省下挑選傢俱的時間，輕鬆將風格打包回家。</p>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="col">
+            <!-- <img src="img/index/hr/風格組.png" alt=""> -->
+            <h2>風格組</h2>
+        </div>
+
+        <div class="style_package_list">
+            <ul>
+                <li>
+                    <a href="bedroom_style.html"><img src="img/index/catalog/bedroom_after1.png" alt=""></a>
+                    <a class="btn from-top style_package_list_title" href="bedroom_style.html">
+                        簡約藍調｜臥室
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/index/catalog/livingroom_after1.png" alt=""></a>
+                    <a class="btn from-top style_package_list_title" href="#" class="style_package_list_title">
+                        自然沐風｜客廳
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/index/catalog/bathroom_after1.png" alt=""></a>
+                    <a class="btn from-top style_package_list_title" href="#" class="style_package_list_title">
+                        小窩清新｜浴室
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/index/catalog/dining-room_after1.png" alt=""></a>
+                    <a class="btn from-top style_package_list_title" href="#" class="style_package_list_title">
+                        鄉村木香｜餐廳
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/index/catalog/kitchen_after1.png" alt=""></a>
+                    <a class="btn from-top style_package_list_title" href="#" class="style_package_list_title">
+                        晨光饗受｜廚房
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/index/catalog/others.jpg" alt=""></a>
+                    <a class="btn from-top style_package_list_title" href="#" class="style_package_list_title">
+                        浪漫藤編｜角落
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+
+
+
+        <div class="col">
+            <!-- <img src="img/index/hr/精選推薦_hr.png" alt=""> -->
+            <h2>精選推薦</h2>
+        </div>
+
+        <div class="stylepackage">
+            <div class="style_room">
+                <a href="stylepage.html">
+                    <div class="styleroom_pic">
+                        <img src="img/index/木色傢俱/背景1.png" alt="">
+                        <img src="img/index/木色傢俱/背景2.png" alt="">
+                    </div>
+                </a>
+                <div class="title">
+                    <h3>日系無印風</h3>
+                </div>
+            </div>
+            <div class="style_product">
+                <ul>
+                    <li>
+                        <div class="product_item style_item">
+                            <div class="item_pic">
+                                <a href="product.html"><img src="img/index/木色傢俱/木色傢俱1.png" alt=""></a>
+                                <div class="product_buttons">
+                                    <ul>
+                                        <li> <button class="quck_view"><i class="far fa-eye"></i></button></li>
+                                        <li><a href="#" class="cart"><i class="fas fa-cart-plus"></i></a></li>
+                                        <li><a href="#" class="wish_list"><i class="far fa-heart"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item_content">
+                                <a href="#">
+                                    <h4>Plastic Stool</h4>
+                                </a>
+                                <span class="discribe">懶人軟墊,芥末黃</span>
+                                <span class="price">$699</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product_item style_item">
+                            <div class="item_pic">
+                                <a href="#"><img src="img/index/木色傢俱/木色傢俱2.png" alt=""></a>
+                                <div class="product_buttons">
+                                    <ul>
+                                        <li> <button class="quck_view"><i class="far fa-eye"></i></button></li>
+                                        <li><a href="#" class="cart"><i class="fas fa-cart-plus"></i></a></li>
+                                        <li><a href="#" class="wish_list"><i class="far fa-heart"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item_content">
+                                <a href="#">
+                                    <h4>Plastic Stool</h4>
+                                </a>
+                                <span class="discribe">懶人軟墊,芥末黃</span>
+                                <span class="price">$699</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product_item style_item">
+                            <div class="item_pic">
+                                <a href="#"><img src="img/index/木色傢俱/木色傢俱3.png" alt=""></a>
+                                <div class="product_buttons">
+                                    <ul>
+                                        <li> <button class="quck_view"><i class="far fa-eye"></i></button></li>
+                                        <li><a href="#" class="cart"><i class="fas fa-cart-plus"></i></a></li>
+                                        <li><a href="#" class="wish_list"><i class="far fa-heart"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item_content">
+                                <a href="#">
+                                    <h4>Plastic Stool</h4>
+                                </a>
+                                <span class="discribe">懶人軟墊,芥末黃</span>
+                                <span class="price">$699</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product_item style_item">
+                            <div class="item_pic">
+                                <a href="#"><img src="img/index/木色傢俱/木色傢俱4.png" alt=""></a>
+                                <div class="product_buttons">
+                                    <ul>
+                                        <li> <button class="quck_view"><i class="far fa-eye"></i></button></li>
+                                        <li><a href="#" class="cart"><i class="fas fa-cart-plus"></i></a></li>
+                                        <li><a href="#" class="wish_list"><i class="far fa-heart"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item_content">
+                                <a href="#">
+                                    <h4>Plastic Stool</h4>
+                                </a>
+                                <span class="discribe">懶人軟墊,芥末黃</span>
+                                <span class="price">$699</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="col">
+            <!-- <img src="img/index/hr/客製規劃.png" style="margin-left: 70px;" alt=""> -->
+            <h2>空間規劃</h2>
+        </div>
+
+        <div class="customize">
+            <div class="fresh">
+                <div class="fresh_block">
+                    <img src="img/index/pic_wall/fresh.png" alt="">
+                </div>
+                <div class="fresh_block_txt">
+                    <p>還在煩惱如何挑選適合的傢具，<br>
+                        或是沒時間規劃空間風格呢?<br>
+                        現在趕快預約專屬設計師，<br>協助打造專屬你的風格!
+                    </p>
+                    <a class="reserve" href="customize.html">立即預約</a>
+                </div>
+
+            </div>
+            <div class="white">
+                <h3>Liven your living</h3>
+                <img src="img/index/pic_wall/white.png" alt="">
+            </div>
+
+        </div>
+
+
+
+        <div class="col">
+            <!-- <img src="img/index/hr/blog.png" alt=""> -->
+            <h2>blog</h2>
+        </div>
+
+
+        <div class="blog">
+            <div class="blog_item">
+                <a href="#"><img src="img/index/blog/blog_1.png" alt="blog1"></a>
+                <div class="blog_item_content">
+                    <h3>空間巧思</h3>
+                    <p>
+                        有時只需要小改變，就能讓空間煥然一新。常被忽略的窗簾，其實非常實用的小單品；掛上不同顏色或圖紋的窗簾，整個房間立刻有了新風貌。
+                    </p>
+                    <span><a href="#">more</a></span>
+                </div>
+            </div>
+            <div class="blog_item">
+                <a href="#"><img src="img/index/blog/blog_2.png" alt="blog1"></a>
+                <div class="blog_item_content">
+                    <h3>藝術居家</h3>
+                    <p>
+                        舒適的家讓人能夠完全做自己。當全家都是藝術家的時候，家更是日常生活的靜謐所在，讓人充飽電，持續創作。<span><a href="#">more</a></span>
+                    </p>
+                    <span><a href="#">more</a></span>
+                </div>
+            </div>
+            <div class="blog_item">
+                <a href="#"><img src="img/index/blog/blog_3.png" alt="blog1"></a>
+                <div class="blog_item_content">
+                    <h3>幸福空間</h3>
+                    <p>
+                        該怎麼讓家人聚在一起，享受生活和玩樂？透過開放式設計、舒適的材質和色彩，創造出適合全家人的生活空間。<span><a href="#">more</a></span>
+                    </p>
+                    <span><a href="#">more</a></span>
+                </div>
+            </div>
+            <div class="blog_item">
+                <a href="#"><img src="img/index/blog/blog_4.png" alt="blog1"></a>
+                <div class="blog_item_content">
+                    <h3>廚房收納</h3>
+                    <p>
+                        在整齊的廚房裡，是否也能同時展現個人風格？一起從這個兼顧隱藏和陳列收納方式的廚房裡，得到更多靈感。<span><a href="#">more</a></span>
+                    </p>
+                    <span><a href="#">more</a></span>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <button type="button" id="go_top">
+        <i class="fas fa-home"></i><br>
+        top
+    </button>
+
+
+
+    <footer>
+        <div class="footer_content">
+            <div class="footer_logo">
+                <a href="index.html"><img src="img/index/logo.png" alt="logo"></a>
+            </div>
+            <div class="footer_nav">
+                <ul>
+                    <li><a href="about_us.html">關於Hygge</a></li>
+                    <li><a href="#">關於服務</a></li>
+                    <li><a href="#">企業合作</a></li>
+                    <li><a href="#">聯絡我們</a></li>
+                </ul>
+            </div>
+            <div class="social_icon">
+                <a href="#"><i class="fas fa-envelope"></i></a>
+                <a href="#"><i class="fab fa-line"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"> <i class="fab fa-facebook-square"></i></a>
+            </div>
+            <div class="footer_copyright">
+                &copy; 2020 Powered by Hygge.ALL Right Reserved.
+            </div>
+
+
+
+    </footer>
+
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/loading.js"></script>
+    <script src="https://kit.fontawesome.com/d18b20bddd.js" crossorigin="anonymous"></script>
+    <script src="js/hamburger_top.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
